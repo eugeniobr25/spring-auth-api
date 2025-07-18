@@ -1,0 +1,107 @@
+type: collection.insomnia.rest/5.0
+name: API Auth
+meta:
+  id: wrk_82c84822b11a4ef48b2c20c31da75d8d
+  created: 1752816057652
+  modified: 1752816070906
+  description: ""
+collection:
+  - url: http://localhost:8080/user
+    name: Auth info
+    meta:
+      id: req_3e6e81177e964a29a1d1b2088122a3ec
+      created: 1752816057729
+      modified: 1752818703323
+      isPrivate: false
+      description: ""
+      sortKey: -1752816057729
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.3.0
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJsb2dpbi1hdXRoLWFwaSIsInN1YiI6ImV1Z2VuaW9AZXVnZW5pby5jb20uYnIiLCJleHAiOjE3NTI4MjU4NzB9.LFqf2GR081Jfvfx21n9oylGmYazcLrQh31Cnu95Goz4
+      prefix: Bearer
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/auth/register
+    name: Register
+    meta:
+      id: req_6c10e4eb94994701ac910c963852b8d2
+      created: 1752816094767
+      modified: 1752819672476
+      isPrivate: false
+      description: ""
+      sortKey: -1752816094767
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Eugenio",
+        	"email": "eugeniobrilhante@hotmail.com",
+        	"password": "123456789"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/auth/login
+    name: Login
+    meta:
+      id: req_4d81a2e58e824605a02c16adef26a355
+      created: 1752816133240
+      modified: 1752820141150
+      isPrivate: false
+      description: ""
+      sortKey: -1752816133240
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "liliana@liliana.com.br",
+        	"password": "123456789"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_935a7a5f29ccae984ddc225274f3000b08b3c1c1
+    created: 1752816057663
+    modified: 1752816057663
+environments:
+  name: Base Environment
+  meta:
+    id: env_935a7a5f29ccae984ddc225274f3000b08b3c1c1
+    created: 1752816057656
+    modified: 1752816057656
+    isPrivate: false
