@@ -10,8 +10,6 @@ Este é o backend da aplicação de autenticação desenvolvida com **Java** e *
 
 A API tem como objetivo fornecer endpoints seguros para cadastro, login e acesso autenticado de usuários, utilizando **JWT (JSON Web Tokens)** para garantir a segurança da autenticação.
 
----
-
 ## 🚀 Tecnologias utilizadas
 
 - Java 17
@@ -20,16 +18,12 @@ A API tem como objetivo fornecer endpoints seguros para cadastro, login e acesso
 - JWT
 - Maven
 
----
-
 ## 🔐 Funcionalidades
 
 - Cadastro de novos usuários
 - Login e geração de token JWT
 - Autenticação e proteção de rotas
 - Retorno de dados do usuário autenticado
-
----
 
 ## 🧪 Como executar o projeto localmente
 
@@ -39,23 +33,17 @@ A API tem como objetivo fornecer endpoints seguros para cadastro, login e acesso
 git clone https://github.com/eugeniobr25/spring-auth-api.git
 ```
 
----
-
 2. Navegue até o diretório do projeto:
 
 ```bash
 cd spring-auth-api
 ```
 
----
-
 3. Compile e rode a aplicação com o Maven:
    
 ```bash
 mvn spring-boot:run
 ```
-
----
 
 4. A API estará disponível em:
    
@@ -65,7 +53,8 @@ http://localhost:8080
 
 ---
 
-📂 Estrutura de pastas
+5. 📂 Estrutura de pastas
+```bash
 src
 └── main
     └── java
@@ -76,21 +65,20 @@ src
             │   └── security
             ├── repository
             └── service
+```
 
----
+6. 📬 Endpoints principais
 
-📬 Endpoints principais
 | Método | Rota         | Descrição               | Protegido |
 | ------ | ------------ | ----------------------- | --------- |
 | POST   | /auth/signup | Cadastrar novo usuário  | ❌         |
 | POST   | /auth/login  | Autenticação/login      | ❌         |
 | GET    | /user        | Dados do usuário logado | ✅         |
 
----
 
-🧠 Observações
+7. 🧠 Observações
+
 Este projeto foi desenvolvido como parte de um exercício prático de aprendizado, conectando os conceitos de backend com frontend, utilizando autenticação moderna baseada em tokens.
 
----
 
 
