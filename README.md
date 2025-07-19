@@ -4,10 +4,6 @@ Este projeto foi inspirado no excelente trabalho da [Fernanda Kipper](https://gi
 
 # Spring Auth API
 
-> Agradecimento especial ao canal **Coding With Dev** pelo excelente conteúdo. Fiz apenas uma pequena modificação no `AuthGuard` do projeto frontend para acompanhar as boas práticas mais recentes do Angular, utilizando o novo formato de `routes` com `canActivateFn`.
-
----
-
 ## 📌 Sobre o projeto
 
 Este é o backend da aplicação de autenticação desenvolvida com **Java** e **Spring Boot**, que serve de base para o frontend em Angular disponível no repositório [ng-login-signup-app](https://github.com/eugeniobr25/ng-login-signup-app).
