@@ -50,10 +50,9 @@ mvn spring-boot:run
 ```bash
 http://localhost:8080
 ```
-
 ---
+📂 Estrutura de pastas
 
-5. 📂 Estrutura de pastas
 ```bash
 src
 └── main
@@ -66,17 +65,16 @@ src
             ├── repository
             └── service
 ```
-
-6. 📬 Endpoints principais
+---
+📬 Endpoints principais
 
 | Método | Rota         | Descrição               | Protegido |
 | ------ | ------------ | ----------------------- | --------- |
 | POST   | /auth/signup | Cadastrar novo usuário  | ❌         |
 | POST   | /auth/login  | Autenticação/login      | ❌         |
 | GET    | /user        | Dados do usuário logado | ✅         |
-
-
-7. 🧠 Observações
+---
+🧠 Observações
 
 Este projeto foi desenvolvido como parte de um exercício prático de aprendizado, conectando os conceitos de backend com frontend, utilizando autenticação moderna baseada em tokens.
 
